@@ -1,6 +1,9 @@
-# RobloxGameFiles
+# Roblox Game Files
 
 Here, i give out Roblox Game Files (.rbxl files) to anyone!
+
+**Links:**
+*I'll attach links later*
 
 **When i'm available:**
 | Day | Time (After) |
@@ -12,3 +15,7 @@ Here, i give out Roblox Game Files (.rbxl files) to anyone!
 | Friday | 1:00 PM |
 | Saturday | 10:00 AM |
 | Sunday | 10:00 AM |
+
+# Roblox Scripts
+
+*I'll attach links later*
