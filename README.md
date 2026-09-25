@@ -7,6 +7,7 @@ Here, i give out Roblox Game Files (.rbxl files) to anyone!
 [RBXL Files](https://github.com/pernicekcute/RobloxGameFiles/tree/main/RBXL)
 
 **When i'm available:**
+*Work Days*
 | Day | Time (After) |
 |---|---|
 | Monday | 2:00 PM |
@@ -14,5 +15,9 @@ Here, i give out Roblox Game Files (.rbxl files) to anyone!
 | Wednesday | 2:00 PM |
 | Thursday | 1:00 PM |
 | Friday | 1:00 PM |
+<br>
+*Weekends*
+| Day | Time (After) |
+|---|---|
 | Saturday | 10:00 AM |
 | Sunday | 10:00 AM |
