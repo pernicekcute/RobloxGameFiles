@@ -2,6 +2,9 @@
 
 Here, i give out Roblox Game Files (.rbxl files) to anyone!
 
+[Scripts](https://github.com/pernicekcute/RobloxGameFiles/tree/main/Scripts)
+[RBXL Files](https://github.com/pernicekcute/RobloxGameFiles/tree/main/RBXL)
+
 **Links:**
 *I'll attach links later*
 
