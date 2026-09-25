@@ -17,7 +17,8 @@ Here, i give out Roblox Game Files (.rbxl files) to anyone!
 | Thursday | 1:00 PM |
 | Friday | 1:00 PM |
 <br>
-*Weekends*<br>
+*Weekends*
+
 | Day | Time (After) |
 |---|---|
 | Saturday | 10:00 AM |
