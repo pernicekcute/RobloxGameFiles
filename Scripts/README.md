@@ -1,3 +1,3 @@
 # Scripts
 
-Here, i'll add scripts, they'll be organized into their Parent Game.
+Here, i'll add Script Loadstrings, they'll be organized into their Parent Game, they'll also be encoded with IronBrew for privacy.
