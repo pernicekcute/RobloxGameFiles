@@ -1,12 +1,12 @@
 # Scripts
 
-Here, i'll add Script Loadstrings, they'll be organized into their Parent Game, they'll also be encoded with IronBrew for privacy.
+Here you will find script loadstrings organized by their parent game. All scripts are encoded with IronBrew for privacy.
 
-**LoadStrings:**<br>
-<br>
-*DOORS*
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua"))()
-```
 ---
-<br>
+
+## DOORS
+
+### The Archives Entities Admin Panel
+
+```lua
+loadstring(game:HttpGet("[https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua](https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua)"))()
