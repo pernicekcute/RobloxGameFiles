@@ -10,3 +10,4 @@ Here you will find script loadstrings organized by their parent game. All script
 
 ```lua
 loadstring(game:HttpGet("[https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua](https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua)"))()
+```
