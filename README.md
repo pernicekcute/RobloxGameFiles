@@ -10,9 +10,10 @@
   </tr>
 </table>
 
-**Links:**<br>
-[Scripts](https://github.com/pernicekcute/RobloxGameFiles/tree/main/Scripts) <br>
-[RBXL Files](https://github.com/pernicekcute/RobloxGameFiles/tree/main/RBXL)
+| Resource | Direct Link |
+| :--- | :--- |
+| **Scripts** | [Browse Scripts](https://github.com/pernicekcute/RobloxGameFiles/tree/main/Scripts) |
+| **RBXL Files** | [Browse RBXL Files](https://github.com/pernicekcute/RobloxGameFiles/tree/main/RBXL) |
 
 **When i'm available:**<br>
 <br>
