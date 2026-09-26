@@ -1,10 +1,14 @@
-<p align="right">
-  <img align="right" height="180" src="https://github.com/pernicekcute/RobloxGameFiles/blob/main/images/rblxicon.png?raw=true" style="float: right;"/>
-</p>
-
-# Roblox Game Files
-
-Here, i give out Roblox Game Files (.rbxl files) to anyone!
+<table>
+  <tr>
+    <td>
+      <h1>Roblox Game Files</h1>
+      <p>Here, i give out Roblox Game Files (.rbxl files) to anyone!</p>
+    </td>
+    <td align="right">
+      <img height="180" src="https://github.com/pernicekcute/RobloxGameFiles/blob/main/images/rblxicon.png?raw=true"/>
+    </td>
+  </tr>
+</table>
 
 **Links:**<br>
 [Scripts](https://github.com/pernicekcute/RobloxGameFiles/tree/main/Scripts) <br>
