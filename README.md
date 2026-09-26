@@ -1,5 +1,5 @@
 <p align="right">
-  <img height="180" src="https://github.com/pernicekcute/RobloxGameFiles/blob/main/images/rblxicon.png?raw=true" style="float: right;"/>
+  <img align="right" height="180" src="https://github.com/pernicekcute/RobloxGameFiles/blob/main/images/rblxicon.png?raw=true" style="float: right;"/>
 </p>
 
 # Roblox Game Files
