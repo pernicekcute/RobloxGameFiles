@@ -5,7 +5,7 @@ local Player = game:GetService("Players").LocalPlayer
 
 -- 1. Thread the exact client signal execution from the repository configuration
 task.spawn(function()
-    -- Adding the "Yellow" structural tag prevents the typewriter module from throwing a silent data exception
+    -- Explicitly fires the native typewriter module event hook
     firesignal(RemotesFolder.DeathHint.OnClientEvent, {
         "Hello...", 
         "I'm glad you found this place!", 
@@ -19,9 +19,9 @@ pcall(function()
     GameStats["Player_" .. Player.Name].Total.DeathCause.Value = "Elevator"
 end)
 
--- 3. THE DEFINITIVE CRUCIAL FIX: Wait exactly 0.1 seconds 
--- This stops the race condition, giving the typing engine the padding it needs to load before dying
-task.wait(0.1)
+-- 3. THE ABSOLUTE CRUCIAL FIX: Wait 1.5 seconds instead of 0.1
+-- This gives the game engine enough time to start typing the sentences before the character resets
+task.wait(1.5)
 
 -- 4. Initiate the standard damage threshold sequence to process the kill loop cleanly
 if Player.Character and Player.Character:FindFirstChildOfClass("Humanoid") then
