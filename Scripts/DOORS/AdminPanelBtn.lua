@@ -28,12 +28,10 @@ if colorValue then
     
     if colorThemes[key] then
         local theme = colorThemes[key]
-        btn.BackgroundTransparency = 0
         btn.BackgroundColor3 = theme.background
 
         local icon = btn:FindFirstChild("IconImage") or btn:FindFirstChildWhichIsA("ImageLabel", true)
         if icon then
-            icon.ImageTransparency = 0
             icon.ImageColor3 = theme.icon
         end
     end
