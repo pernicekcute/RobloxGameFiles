@@ -1,8 +1,13 @@
-local player = game.Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-local btn = playerGui:WaitForChild("TopbarUI").ButtonsLeft:WaitForChild("PanelButton")
+local colorValue = ...
 
--- Color theme configurations
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui", 10)
+local topbar = playerGui and playerGui:WaitForChild("TopbarUI", 10)
+local buttonsLeft = topbar and topbar:WaitForChild("ButtonsLeft", 10)
+local btn = buttonsLeft and buttonsLeft:WaitForChild("PanelButton", 10)
+
+if not btn then return end
+
 local colorThemes = {
     red = {
         background = Color3.fromRGB(102, 39, 39),
@@ -18,20 +23,18 @@ local colorThemes = {
     }
 }
 
--- Fetch and execute the GitHub code to get the returned string ("red", "yellow", "green", or "def")
-local colorValue = loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/AdminPanelBtn.lua"))()
-
 if colorValue then
-    local key = string.lower(tostring(colorValue))
+    local key = string.lower(tostring(colorValue)):match("^%s*(.-)%s*$")
     
-    -- If key is "red", "yellow", or "green", apply the theme
-    -- If key is "def" or anything else, no changes are made
     if colorThemes[key] then
         local theme = colorThemes[key]
+        btn.BackgroundTransparency = 0
         btn.BackgroundColor3 = theme.background
 
-        if btn:FindFirstChild("IconImage") then
-            btn.IconImage.ImageColor3 = theme.icon
+        local icon = btn:FindFirstChild("IconImage") or btn:FindFirstChildWhichIsA("ImageLabel", true)
+        if icon then
+            icon.ImageTransparency = 0
+            icon.ImageColor3 = theme.icon
         end
     end
 end
