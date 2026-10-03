@@ -16,5 +16,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGa
 ```
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/AdminPanelBtn.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/AdminPanelBtn.lua"))("red")
 ```
