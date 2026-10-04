@@ -14,15 +14,13 @@ elseif deathType == "Blue" then
 end
 
 local CustomLines = {
-    "Hello...", 
-    "I'm glad you found this place!", 
-    "And i'm surprised how you even got here, since most elevators are broken or unstable.", 
-    "Goodbye, and I hope I see you later!..."
+    "Welcome to this Custom Death Screen!", 
+    "Made by rkyroaddd3!"
 }
 
 -- 1. Safely inject your working DeathCause value first
 pcall(function()
-    GameStats["Player_" .. Player.Name].Total.DeathCause.Value = "Elevator"
+    GameStats["Player_" .. Player.Name].Total.DeathCause.Value = "rkyroaddd3"
 end)
 
 -- 2. Trigger the real typewriter signal natively using Delta's framework
