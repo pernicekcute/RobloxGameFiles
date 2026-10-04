@@ -5,11 +5,11 @@ local Player = game:GetService("Players").LocalPlayer
 local DoorsCaptions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/DOORS-Captions/main/init.luau"))()
 
 local deathType = "Yellow"
-local ver = "1.0
+local ver = "1.0"
 
 if deathType == "Yellow" then
     DoorsCaptions.caption("Loading - Curious Light Death Message! v" .. ver, "info", 7)
-else if deathType == "Blue" then
+elseif deathType == "Blue" then
     DoorsCaptions.caption("Loading - Guiding Light Death Message! v" .. ver, "info", 7)
 end
 
@@ -32,7 +32,7 @@ end)
 
 -- 3. MOBILE ENGINE TIMING BIND: Calculate exactly how long the text takes to print.
 -- Each line takes roughly 3-4 seconds to type out and read. 
--- We wait 12 seconds so your phone can safely show the text while your character is alive!
+-- We wait 7 seconds so your phone can safely show the text while your character is alive!
 task.wait(7)
 
 -- 4. Clean local character reset after the text is fully finished
