@@ -2,6 +2,9 @@
 local RemotesFolder = game:GetService("ReplicatedStorage"):WaitForChild("RemotesFolder")
 local GameStats = game:GetService("ReplicatedStorage"):WaitForChild("GameStats")
 local Player = game:GetService("Players").LocalPlayer
+local DoorsCaptions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/DOORS-Captions/main/init.luau"))()
+
+DoorsCaptions.caption("Please load this with Admin Panel and GodMode ON!!", "info", 7)
 
 local CustomLines = {
     "Hello...", 
