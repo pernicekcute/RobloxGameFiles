@@ -4,7 +4,14 @@ local GameStats = game:GetService("ReplicatedStorage"):WaitForChild("GameStats")
 local Player = game:GetService("Players").LocalPlayer
 local DoorsCaptions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/DOORS-Captions/main/init.luau"))()
 
-DoorsCaptions.caption("Please load this with Admin Panel and GodMode ON!!", "info", 7)
+local deathType = "Yellow"
+local ver = "1.0
+
+if deathType == "Yellow" then
+    DoorsCaptions.caption("Loading - Curious Light Death Message! v" .. ver, "info", 7)
+else if deathType == "Blue" then
+    DoorsCaptions.caption("Loading - Guiding Light Death Message! v" .. ver, "info", 7)
+end
 
 local CustomLines = {
     "Hello...", 
@@ -20,7 +27,7 @@ end)
 
 -- 2. Trigger the real typewriter signal natively using Delta's framework
 task.spawn(function()
-    firesignal(RemotesFolder.DeathHint.OnClientEvent, CustomLines, "Yellow")
+    firesignal(RemotesFolder.DeathHint.OnClientEvent, CustomLines, deathType)
 end)
 
 -- 3. MOBILE ENGINE TIMING BIND: Calculate exactly how long the text takes to print.
