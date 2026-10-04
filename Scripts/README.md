@@ -11,14 +11,15 @@ Here you will find script loadstrings organized by their parent game. All script
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua"))()
 ```
+### Custom Death Screen (WORKS ONLY WITHOUT ADMIN PANEL) !!CURRENTLY BROKEN!!
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/CustomDeathScreen.lua"))()
 ```
-
+### Custom Admin Panel Button Color
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/AdminPanelBtn.lua"))("red")
 ```
-
+### Fake Admin Abuse
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/FakeAdminAbuse.lua"))()
 ```
