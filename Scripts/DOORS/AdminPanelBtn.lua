@@ -1,4 +1,6 @@
-local localPlayer = game.Players.LocalPlayer
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+
 local playerGui = localPlayer:WaitForChild("PlayerGui", 10)
 local topbar = playerGui and playerGui:WaitForChild("TopbarUI", 10)
 local buttonsLeft = topbar and topbar:WaitForChild("ButtonsLeft", 10)
@@ -93,8 +95,9 @@ local colorThemes = {
     }
 }
 
-if colorValue then
-    local key = string.lower(tostring(colorValue)):match("^%s*(.-)%s*$")
+local function applyTheme(message)
+    if not message then return end
+    local key = string.lower(tostring(message)):match("^%s*(.-)%s*$")
     
     if colorThemes[key] then
         local theme = colorThemes[key]
@@ -106,3 +109,20 @@ if colorValue then
         end
     end
 end
+
+-- Connect listener to a player's chat
+local function bindChatListener(plr)
+    plr.Chatted:Connect(applyTheme)
+end
+
+-- Listen to your own chat messages
+bindChatListener(localPlayer)
+
+-- Listen to current and future players in the server
+for _, plr in ipairs(Players:GetPlayers()) do
+    if plr ~= localPlayer then
+        bindChatListener(plr)
+    end
+end
+
+Players.PlayerAdded:Connect(bindChatListener)
