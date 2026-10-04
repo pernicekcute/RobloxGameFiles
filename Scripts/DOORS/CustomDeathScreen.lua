@@ -4,13 +4,13 @@ local GameStats = game:GetService("ReplicatedStorage"):WaitForChild("GameStats")
 local Player = game:GetService("Players").LocalPlayer
 local DoorsCaptions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/DOORS-Captions/main/init.luau"))()
 
-local deathType = "Yellow"
+local deathType = "Blue"
 local ver = "1.0"
 
 if deathType == "Yellow" then
-    DoorsCaptions.caption("Loading - Curious Light Death Message! v" .. ver, "info", 7)
+    DoorsCaptions.caption("Loading - Curious Light Death Message! v" .. ver .. ", Made by rkyroaddd3!", "info", 7)
 elseif deathType == "Blue" then
-    DoorsCaptions.caption("Loading - Guiding Light Death Message! v" .. ver, "info", 7)
+    DoorsCaptions.caption("Loading - Guiding Light Death Message! v" .. ver .. ", Made by rkyroaddd3!", "info", 7)
 end
 
 local CustomLines = {
