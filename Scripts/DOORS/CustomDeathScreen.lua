@@ -26,7 +26,7 @@ end)
 -- 3. MOBILE ENGINE TIMING BIND: Calculate exactly how long the text takes to print.
 -- Each line takes roughly 3-4 seconds to type out and read. 
 -- We wait 12 seconds so your phone can safely show the text while your character is alive!
-task.wait(12)
+task.wait(7)
 
 -- 4. Clean local character reset after the text is fully finished
 local character = Player.Character
