@@ -11,7 +11,7 @@ Here you will find script loadstrings organized by their parent game. All script
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/TheArchivesEntitesAdminPanel.lua"))()
 ```
-### Custom Death Screen
+### Custom Death Screen (Only works with Admin Panel, I'm trying to find a solution.)
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pernicekcute/RobloxGameFiles/refs/heads/main/Scripts/DOORS/CustomDeathScreen.lua"))()
 ```
