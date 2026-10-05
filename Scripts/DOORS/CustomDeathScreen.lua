@@ -14,8 +14,9 @@ elseif deathType == "Blue" then
 end
 
 local CustomLines = {
-    "Welcome to this Custom Death Screen!", 
-    "Made by rkyroaddd3!"
+    "You stayed in the dark a little too long...",
+    "And the melody faded, leaving only empty halls.",
+    "No one was left to watch you fall."
 }
 
 -- 1. Safely inject your working DeathCause value first
