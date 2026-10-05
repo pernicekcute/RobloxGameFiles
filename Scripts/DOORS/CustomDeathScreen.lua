@@ -4,7 +4,7 @@ local GameStats = game:GetService("ReplicatedStorage"):WaitForChild("GameStats")
 local Player = game:GetService("Players").LocalPlayer
 local DoorsCaptions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/DOORS-Captions/main/init.luau"))()
 
-local deathType = "Blue"
+local deathType = "Yellow"
 local ver = "1.0"
 
 if deathType == "Yellow" then
