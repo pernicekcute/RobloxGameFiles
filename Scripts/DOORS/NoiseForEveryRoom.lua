@@ -7,6 +7,8 @@ local AdminCommand = ReplicatedStorage
     :WaitForChild("RemotesFolder")
     :WaitForChild("AdminPanelRunCommand")
 
+local OFFSET = 15
+
 local function spawnNoise(room)
     local roomExit = room:WaitForChild("RoomExit", 10)
 
@@ -15,12 +17,13 @@ local function spawnNoise(room)
         return
     end
 
-    local spawnPosition = roomExit.Position
+    -- Offset 15 studs backward from the exit's facing direction.
+    local spawnPosition =
+        roomExit.Position - roomExit.CFrame.LookVector * OFFSET
 
     print("New room:", room.Name)
     print("Noise spawn position:", spawnPosition)
 
-    -- Replace these arguments with the format expected by the admin remote.
     AdminCommand:FireServer("Noise", spawnPosition)
 end
 
