@@ -13,22 +13,25 @@ local function spawnNoise(room)
     local roomExit = room:WaitForChild("RoomExit", 10)
 
     if not roomExit or not roomExit:IsA("MeshPart") then
-        warn("RoomExit MeshPart not found in room:", room.Name)
+        warn("RoomExit not found in", room.Name)
         return
     end
 
-    -- Offset 15 studs backward from the exit's facing direction.
+    -- Position 15 studs inside the room from its exit.
     local spawnPosition =
         roomExit.Position - roomExit.CFrame.LookVector * OFFSET
 
-    print("New room:", room.Name)
-    print("Noise spawn position:", spawnPosition)
+    print("Room:", room.Name)
+    print("Requested Noise position:", spawnPosition)
 
-    AdminCommand:FireServer("Noise", spawnPosition)
+    -- The admin panel sends command ID + parameter table.
+    AdminCommand:FireServer("Noise", {
+        Position = spawnPosition
+    })
 end
 
 CurrentRooms.ChildAdded:Connect(function(room)
     task.spawn(spawnNoise, room)
 end)
 
-print("Noise auto-spawner is running!")
+print("Noise room detector enabled!")
